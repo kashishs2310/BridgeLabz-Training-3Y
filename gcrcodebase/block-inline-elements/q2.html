@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Catalog - Online Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Online Store - Product Catalog</h1>
+    </header>
+
+    <main>
+        <!-- Product table with colspan and rowspan examples -->
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Image</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td><img src="laptop.jpg" alt="Laptop" width="80" height="80"></td>
+                <td>Laptop</td>
+                <td>15-inch laptop, 8GB RAM, 512GB SSD</td>
+                <td>Rs. 45,000</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td><img src="mouse.jpg" alt="Wireless Mouse" width="80" height="80"></td>
+                <td>Wireless Mouse</td>
+                <td>Ergonomic wireless mouse with USB receiver</td>
+                <td>Rs. 700</td>
+                <td>In Stock</td>
+            </tr>
+
+            <tr>
+                <td><img src="keyboard.jpg" alt="Mechanical Keyboard" width="80" height="80"></td>
+                <td>Mechanical Keyboard</td>
+                <td>RGB backlit mechanical keyboard</td>
+                <td>Rs. 2,500</td>
+                <td>Out of Stock</td>
+            </tr>
+
+            <!-- rowspan example: two related items share the same category note -->
+            <tr>
+                <td rowspan="2"><img src="headset.jpg" alt="Headset" width="80" height="80"></td>
+                <td>Gaming Headset</td>
+                <td>Over-ear headset with noise-cancelling mic</td>
+                <td>Rs. 1,800</td>
+                <td>In Stock</td>
+            </tr>
+            <tr>
+                <td>Headset Stand</td>
+                <td>Compact desktop stand for headsets</td>
+                <td>Rs. 400</td>
+                <td>In Stock</td>
+            </tr>
+
+            <!-- colspan example: full-width notice row -->
+            <tr>
+                <td colspan="5">All prices are inclusive of applicable taxes. Free delivery on orders above Rs. 2,000.</td>
+            </tr>
+        </table>
+    </main>
+
+    
+
+</body>
+</html>
