@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: #faf6ee;
+  color: #2b241c;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  background-color: #7a2e2e;
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.brand {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f6e9d8;
+}
+
+nav {
+  width: 100%;
+  background-color: #2b241c;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1rem 5%;
+}
+
+nav a {
+  color: #f6e9d8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+nav a:hover {
+  border-color: #d8a24a;
+}
+
+main section {
+  width: 100%;
+  padding: 5rem 8%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+main h2 {
+  margin-bottom: 1.25rem;
+}
+
+main p {
+  max-width: 65ch;
+  margin: 0 auto;
+}
+
+main section h2 {
+  max-width: 65ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.gradient-linear h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.parallax h2 {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.gradient-radial h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.gradient-linear {
+  background: linear-gradient(120deg, #8c3a3a 0%, #d8a24a 100%);
+  color: #fff8ec;
+}
+
+.gradient-radial {
+  background: radial-gradient(circle at center, #f3ddb0 0%, #d8a24a 60%, #8c3a3a 100%);
+  color: #2b241c;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.parallax-one {
+  background-image: linear-gradient(rgba(20, 12, 8, 0.55), rgba(20, 12, 8, 0.55)),
+    url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200');
+}
+
+.parallax-two {
+  background-image: linear-gradient(rgba(20, 12, 8, 0.6), rgba(20, 12, 8, 0.6)),
+    url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1200');
+}
+
+.parallax-overlay {
+  color: #fff8ec;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+footer {
+  width: 100%;
+  background-color: #2b241c;
+  color: #cbb896;
+  text-align: center;
+  padding: 1.5rem 5%;
+  font-size: 0.9rem;
+}

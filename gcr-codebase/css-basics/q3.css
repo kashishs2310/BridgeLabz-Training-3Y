@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f2f4f7;
+  color: #26313c;
+  padding: 3rem 5%;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #1a2530;
+}
+
+.team-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: #ffffff;
+  padding: 2rem 1.5rem;
+  border: 1px solid #dde3e9;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(20, 30, 40, 0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+  color: #1a2530;
+}
+
+.card .role {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #5b6b78;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #445059;
+}
+
+.card.lead {
+  background-color: #1a2530;
+  border: 2px dashed #d8a24a;
+}
+
+.card.lead h2,
+.card.lead .role {
+  color: #f6e9d8;
+}
+
+.card.lead p {
+  color: #c9d2d8;
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+}

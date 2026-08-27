@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Small Bugs Become Big Breaches</title>
+<link rel="stylesheet" href="q4.css">
+</head>
+<body>
+
+  <header class="article-header">
+    <h1>Why Small Bugs Become Big Breaches</h1>
+  </header>
+
+  <p class="byline">By Kashish Singh · Published August 26, 2026</p>
+
+  <article>
+
+    <p>
+      Every security incident starts small. A missing input check here, an
+      unvalidated redirect there, a session token that never expires. None of
+      these look dangerous on their own, which is exactly why they survive
+      code review long enough to matter. The gap between a <mark>minor oversight</mark>
+      and a full compromise is usually smaller than most developers assume.
+    </p>
+
+    <p>
+      Attackers rarely need a single dramatic flaw. They chain together
+      several ordinary ones — a bit of information disclosure here, a
+      predictable identifier there — until the combination adds up to
+      something serious. This is why defense in depth exists: no individual
+      layer has to be perfect if the layers together are hard to line up.
+    </p>
+
+    <blockquote>
+      The most dangerous vulnerabilities are rarely the exotic ones. They're
+      the boring ones nobody thought were worth fixing.
+    </blockquote>
+
+    <p>
+      Consider a classic example: a login form that returns a different error
+      message for "user not found" versus "wrong password." That's a tiny
+      leak, barely worth a ticket. But paired with a lack of <mark>rate limiting</mark>,
+      it becomes a practical way to enumerate valid accounts before ever
+      touching the password field.
+    </p>
+
+    <p>
+      The fix is rarely a single silver bullet. It's a discipline: validating
+      input at every boundary, logging enough to notice anomalies, and
+      treating every new feature as a new attack surface rather than just a
+      new capability. None of it is glamorous, and that's precisely the
+      point.
+    </p>
+
+    <p>
+      Security work, in the end, is mostly about taking the boring parts
+      seriously — because the people trying to break in already do.
+    </p>
+
+  </article>
+
+</body>
+</html>

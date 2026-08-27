@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: #101820;
+  color: #e8f1f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+  background-color: #16232c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  z-index: 10;
+  border-bottom: 1px solid #24343e;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #7fd1c9;
+}
+
+.site-header nav a {
+  color: #e8f1f2;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: #7fd1c9;
+}
+
+main {
+  flex: 1;
+  margin-top: 4.5rem;
+  display: flex;
+  align-items: center;
+  padding: 4vh 8%;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 3px solid #7fd1c9;
+  flex-shrink: 0;
+}
+
+.bio-text h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75em;
+  color: #ffffff;
+}
+
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #c7d6d9;
+  max-width: 55ch;
+}
+
+.site-footer {
+  background-color: #16232c;
+  color: #9fb3b8;
+  text-align: center;
+  padding: 1.5rem 5%;
+  border-top: 1px solid #24343e;
+  font-size: 0.95rem;
+}
