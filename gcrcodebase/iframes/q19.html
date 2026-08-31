@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q19 - Form Security Attributes</title>
+</head>
+<body>
+
+    <h1>Secure Form Example</h1>
+
+    <form action="#" method="post" autocomplete="off">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="cardnumber">Card Number:</label>
+        <input type="text" id="cardnumber" name="cardnumber" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <p>
+        Turning off autocomplete prevents the browser from storing and
+        auto-filling sensitive information such as passwords or card
+        numbers. This reduces the risk of that data being exposed if the
+        device is shared with, or accessed by, someone else.
+    </p>
+
+</body>
+</html>
