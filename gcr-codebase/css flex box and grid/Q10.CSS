@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f8f8f6;
+  color: #222;
+}
+
+/* Header: Flexbox */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2.5rem;
+  background-color: #14213d;
+}
+
+.logo {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #d8dee9;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Main: Grid, article + sidebar */
+.page-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.article h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.article p {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Inside article: Flexbox boxes */
+.article-boxes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.mini-box {
+  flex: 1 1 140px;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 6px;
+  padding: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: #14213d;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 1.5rem;
+  height: fit-content;
+  border: 1px solid #e2e2e2;
+}
+
+.sidebar h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+/* Footer: full width, centered */
+.page-footer {
+  background-color: #14213d;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Collapse to single column on mobile */
+@media (max-width: 700px) {
+  .page-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .page-main {
+    grid-template-columns: 1fr;
+  }
+}

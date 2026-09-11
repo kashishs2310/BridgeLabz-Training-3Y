@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eef0f4;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.scene {
+  perspective: 1000px;
+}
+
+.card {
+  width: 280px;
+  height: 340px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.scene:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-front {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.thumb {
+  width: 100%;
+  height: 160px;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  background: linear-gradient(135deg, #1f2937, #4b6cb7);
+}
+
+.card-back {
+  background-color: #1f2937;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
