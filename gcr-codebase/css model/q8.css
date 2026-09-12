@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f8f8f6;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+/* Center the whole demonstration on the page */
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.model-column {
+  text-align: center;
+  max-width: 260px;
+}
+
+.model-column h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+/* Margin layer: outermost, shown with an outline (outlines don't affect layout) */
+.margin-layer {
+  position: relative;
+  outline: 2px dashed #f59e0b;
+  padding: 20px; /* visually stands in for margin space */
+  background-color: #fef3c7;
+}
+
+/* Border layer */
+.border-layer {
+  position: relative;
+  border: 6px solid #2563eb;
+  background-color: #dbeafe;
+}
+
+/* Padding layer */
+.padding-layer {
+  position: relative;
+  background-color: #bfdbfe;
+  padding: 20px;
+}
+
+/* Content layer, with the two box-sizing variants */
+.content-layer {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Default box-sizing: width/height apply to content only */
+.content-box-demo {
+  box-sizing: content-box;
+  width: 120px;
+  height: 60px;
+}
+
+/* border-box: width/height include padding + border of THIS element.
+   Since padding/border here are drawn on the wrapper divs above (for
+   the visual diagram), this class demonstrates the property itself
+   on a self-contained box below for comparison. */
+.border-box-demo {
+  box-sizing: border-box;
+  width: 120px;
+  height: 60px;
+  padding: 10px;
+  border: 4px solid #1e3a8a;
+}
+
+.layer-tag {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  font-size: 0.7rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.explain {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: left;
+}

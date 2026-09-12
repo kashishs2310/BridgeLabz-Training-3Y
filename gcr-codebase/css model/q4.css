@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #eef1f5;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.card {
+  width: 240px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.8rem;
+  text-align: center;
+  /* transition covers both transform (lift) and box-shadow (grow) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h2 {
+  margin-bottom: 0.8rem;
+  /* text-shadow adds depth to headings */
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Three distinct box-shadow styles */
+.shadow-soft {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-hard {
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.shadow-colored {
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.45);
+}
+
+/* Hover: lift up with a larger shadow */
+.shadow-soft:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+.shadow-hard:hover {
+  transform: translateY(-8px);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.shadow-colored:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(59, 130, 246, 0.6);
+}

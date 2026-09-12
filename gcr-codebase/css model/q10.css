@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  background-color: #111827;
+}
+
+.navbar a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  /* smooth hover transition on color and background */
+  transition: all 0.3s ease;
+}
+
+.navbar a:last-child {
+  border-right: none;
+}
+
+.navbar a:hover {
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+/* Active link: distinct background and underline */
+.navbar a.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-bottom: 3px solid #93c5fd;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.page-note {
+  color: #555;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+/* Below 700px, stack the nav links vertically */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+  }
+
+  .navbar a.active {
+    border-bottom: 3px solid #93c5fd;
+  }
+}

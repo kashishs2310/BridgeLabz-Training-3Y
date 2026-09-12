@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Selectors</title>
+<link rel="stylesheet" href="q5.css">
+</head>
+<body>
+
+  <header>
+    <h1>Advanced CSS Selectors</h1>
+  </header>
+
+  <main>
+    <section class="link-demo">
+      <h2>Attribute Selectors</h2>
+      <p>Links to secure sites are styled differently below.</p>
+      <a href="https://example.com">Secure link (https)</a>
+      <a href="http://example.com">Insecure link (http)</a>
+    </section>
+
+    <section class="form-demo">
+      <h2>Attribute Selector on Inputs</h2>
+      <input type="text" placeholder="Text input">
+      <input type="email" placeholder="Email input">
+      <input type="checkbox">
+    </section>
+
+    <section class="list-demo">
+      <h2>Pseudo-classes: nth-child, hover, focus</h2>
+      <ul class="item-list">
+        <li tabindex="0">Item One</li>
+        <li tabindex="0">Item Two</li>
+        <li tabindex="0">Item Three</li>
+        <li tabindex="0">Item Four</li>
+        <li tabindex="0">Item Five</li>
+      </ul>
+    </section>
+
+    <section class="combinator-demo">
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child paragraph (styled by <code>&gt;</code>)</p>
+        <span>Adjacent sibling span (styled by <code>+</code>)</span>
+        <span>General sibling span (styled by <code>~</code>)</span>
+        <div class="nested">
+          <p>Descendant paragraph (styled by a plain space)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pseudo-element-demo">
+      <h2>Pseudo-elements: ::before and ::after</h2>
+      <p class="quote">Security is a process, not a product.</p>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f3f4f6;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.styled-form {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* uniform spacing between fields */
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.7rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  /* default resting outline, visible without interaction */
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color 0.2s ease, border-color 0.2s ease;
+  resize: vertical;
+}
+
+/* Distinct outline style per field to show variety, offset outward */
+#name {
+  outline-style: dashed;
+  outline-color: #d1d5db;
+}
+
+#subject {
+  outline-style: dotted;
+  outline-color: #d1d5db;
+  outline-offset: 4px;
+}
+
+/* On focus, every field gets a clear, consistent accent-colored outline */
+input:focus,
+textarea:focus {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+  border-color: #2563eb;
+}
+
+button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 3px;
+}

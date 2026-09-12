@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fdfdfb;
+  color: #2a2a2a;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1.5rem 1.5rem;
+}
+
+/* Serif heading, heavier weight, wide letter-spacing */
+.serif-heading {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* Sans-serif subheading, lighter weight */
+.sans-subheading {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.article {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  line-height: 1.8; /* generous line-height for readability */
+}
+
+.article p {
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* ::first-letter styles the drop-cap style first character of the lead paragraph */
+.lead::first-letter {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #b45309;
+  float: left;
+  line-height: 1;
+  margin-right: 0.3rem;
+}
+
+/* ::first-line styles just the first line of the second paragraph */
+.article p:nth-of-type(2)::first-line {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+strong {
+  color: #b91c1c;
+}
+
+em {
+  color: #1d4ed8;
+}
+
+mark {
+  background-color: #fde68a;
+  color: #222;
+  padding: 0 0.2rem;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

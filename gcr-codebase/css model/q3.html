@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradient Backgrounds</title>
+<link rel="stylesheet" href="q3.css">
+</head>
+<body>
+
+  <header class="fixed-header">
+    <h1>Gradient Background Demo</h1>
+  </header>
+
+  <main>
+    <section class="gradient-section linear">
+      <div class="text-box">
+        <h2>Linear Gradient</h2>
+        <p>This section's background transitions smoothly in a
+          straight line from one color to another, using
+          <code>background: linear-gradient(...)</code>. It also uses
+          <code>background-attachment: fixed;</code> so the gradient
+          stays put while the page scrolls, creating a subtle
+          parallax-like effect.</p>
+      </div>
+    </section>
+
+    <section class="gradient-section radial">
+      <div class="text-box">
+        <h2>Radial Gradient</h2>
+        <p>This section's background radiates outward from a
+          central point using
+          <code>background: radial-gradient(...)</code>, producing a
+          circular color transition instead of a straight one.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fixed-footer">
+    <p>&copy; 2026 CSS Practice</p>
+  </footer>
+
+</body>
+</html>

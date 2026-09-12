@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box Model Exploration</title>
+<link rel="stylesheet" href="q8.css">
+</head>
+<body>
+
+  <header>
+    <h1>The CSS Box Model</h1>
+  </header>
+
+  <main class="stage">
+    <div class="model-column">
+      <h2>content-box (default)</h2>
+      <div class="margin-layer">
+        <span class="layer-tag">margin</span>
+        <div class="border-layer">
+          <span class="layer-tag">border</span>
+          <div class="padding-layer">
+            <span class="layer-tag">padding</span>
+            <div class="content-layer content-box-demo">content</div>
+          </div>
+        </div>
+      </div>
+      <p class="explain">Here, width/height apply only to the content.
+        Padding and border are added on top, making the box bigger
+        than the width you set.</p>
+    </div>
+
+    <div class="model-column">
+      <h2>box-sizing: border-box</h2>
+      <div class="margin-layer">
+        <span class="layer-tag">margin</span>
+        <div class="border-layer">
+          <span class="layer-tag">border</span>
+          <div class="padding-layer">
+            <span class="layer-tag">padding</span>
+            <div class="content-layer border-box-demo">content</div>
+          </div>
+        </div>
+      </div>
+      <p class="explain">Here, padding and border are included inside
+        the width/height you set, so the box stays the size you
+        expect.</p>
+    </div>
+  </main>
+
+</body>
+</html>

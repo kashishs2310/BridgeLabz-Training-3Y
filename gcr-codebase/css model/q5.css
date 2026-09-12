@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  padding: 1rem 2rem 3rem;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+section {
+  max-width: 650px;
+  margin: 0 auto 2.5rem;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #1e3a8a;
+}
+
+/* ---------- ATTRIBUTE SELECTORS ---------- */
+
+/* [href^="https"] selects links whose href starts with "https" */
+a[href^="https"] {
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* Selects any other <a> link (matches all, then https rule above wins by specificity order) */
+a {
+  display: block;
+  margin: 0.4rem 0;
+  color: #b91c1c;
+}
+
+/* [type="text"] selects only text inputs, not email or checkbox */
+input[type="text"] {
+  border: 2px solid #3b82f6;
+}
+
+.form-demo input {
+  display: block;
+  margin-bottom: 0.6rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* ---------- PSEUDO-CLASSES ---------- */
+
+.item-list {
+  list-style: none;
+}
+
+.item-list li {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+/* :nth-child(even) styles every other item */
+.item-list li:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+/* :hover changes background on mouse-over */
+.item-list li:hover {
+  background-color: #dbeafe;
+}
+
+/* :focus (items are tabindex="0" so they can receive keyboard focus) */
+.item-list li:focus {
+  outline: 2px solid #2563eb;
+  background-color: #bfdbfe;
+}
+
+/* ---------- COMBINATORS ---------- */
+
+/* Child combinator (>) selects only direct <p> children of .parent */
+.parent > p {
+  color: #b45309;
+  font-weight: 600;
+}
+
+/* Adjacent sibling combinator (+) selects the span immediately after the <p> */
+.parent p + span {
+  color: #0e7490;
+}
+
+/* General sibling combinator (~) selects any span sibling after the <p> */
+.parent p ~ span {
+  font-style: italic;
+}
+
+/* Descendant combinator (space) selects any <p> nested anywhere inside .nested */
+.nested p {
+  color: #6d28d9;
+  margin-top: 0.5rem;
+}
+
+/* ---------- PSEUDO-ELEMENTS ---------- */
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  position: relative;
+  padding: 0 1.5rem;
+}
+
+/* ::before inserts an opening quotation mark */
+.quote::before {
+  content: "\201C";
+  color: #94a3b8;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+}
+
+/* ::after inserts a closing quotation mark */
+.quote::after {
+  content: "\201D";
+  color: #94a3b8;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+}
