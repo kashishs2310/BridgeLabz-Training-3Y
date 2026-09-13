@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box-Sizing Comparison</title>
+<link rel="stylesheet" href="q8.css">
+</head>
+<body>
+
+  <header>
+    <h1>Box-Sizing Comparison</h1>
+  </header>
+
+  <main class="compare-row">
+    <div class="compare-column">
+      <div class="box content-box">width: 250px<br>padding: 30px</div>
+      <p class="explain">
+        <strong>box-sizing: content-box</strong> (the default) — the
+        30px padding is added <em>on top of</em> the 250px width, so
+        this box actually renders wider than 250px.
+      </p>
+    </div>
+
+    <div class="compare-column">
+      <div class="box border-box">width: 250px<br>padding: 30px</div>
+      <p class="explain">
+        <strong>box-sizing: border-box</strong> — the 30px padding is
+        included <em>inside</em> the 250px width, so this box's total
+        rendered width stays exactly 250px.
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

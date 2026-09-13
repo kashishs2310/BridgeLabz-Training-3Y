@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fafafa;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.showcase-item {
+  text-align: center;
+}
+
+.img-wrap {
+  position: relative;
+  overflow: hidden; /* clips the scaled image to the rounded corners */
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+/* Semi-transparent dark overlay, faded in on hover */
+.img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
+}
+
+.img-wrap:hover .img {
+  transform: scale(1.1);
+}
+
+.img-wrap:hover::after {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+/* Placeholder gradients standing in for real photos */
+.mountains { background: linear-gradient(135deg, #6e8898, #b4c9d4); }
+.forest    { background: linear-gradient(135deg, #2f5233, #7ea16b); }
+.coast     { background: linear-gradient(135deg, #1b4965, #62b6cb); }
+.desert    { background: linear-gradient(135deg, #c9963d, #e6c288); }
+.lake      { background: linear-gradient(135deg, #3d5a80, #98c1d9); }
+.city      { background: linear-gradient(135deg, #22223b, #4a4e69); }
+
+figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Stack into a single column below 700px */
+@media (max-width: 700px) {
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+}

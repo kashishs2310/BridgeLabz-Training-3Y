@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  color: #ffffff;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 2.2rem;
+  padding: 1.2rem 1.5rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  color: #1e3a8a;
+}
+
+/* ---- ELEMENT SELECTOR ---- */
+/* Targets every <p> on the page by tag name */
+p {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* ---- CLASS SELECTOR ---- */
+/* Targets only elements with class="highlight" */
+.highlight {
+  background-color: #fef3c7;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* ---- ID SELECTOR ---- */
+/* Targets the single element with id="intro"; IDs are unique per page */
+#intro {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* ---- ATTRIBUTE SELECTOR ---- */
+/* Targets links whose href starts with "https" */
+a[href^="https"] {
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* ---- COMBINATORS ---- */
+
+/* Child combinator (>): only direct <p> children of .parent */
+.parent > p {
+  color: #b45309;
+  font-weight: 600;
+}
+
+/* Adjacent sibling combinator (+): the span immediately after the <p> */
+.parent p + span {
+  color: #0e7490;
+  display: block;
+}
+
+/* General sibling combinator (~): any span sibling after the <p>, not just the first */
+.parent p ~ span {
+  font-style: italic;
+}
+
+/* Descendant combinator (space): any <p> nested anywhere inside .nested */
+.nested p {
+  color: #6d28d9;
+  margin-top: 0.5rem;
+}
+
+.combinator-box code {
+  background-color: #f1f1f1;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.demo-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+}

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f7f7f5;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+/* Flexbox aligns all four examples neatly in one row, wrapping if needed */
+.example-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.example {
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.example p {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* :hover — link changes color on mouse-over */
+.hover-link {
+  display: inline-block;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.hover-link:hover {
+  color: #dc2626;
+}
+
+.focus-btn,
+.active-btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* :focus — highlights the button when tabbed to or clicked */
+.focus-btn:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+  background-color: #4338ca;
+}
+
+/* :active — changes appearance while the mouse button is held down */
+.active-btn:active {
+  background-color: #1e1b4b;
+  transform: scale(0.95);
+}
+
+.nth-list {
+  list-style: none;
+  text-align: left;
+}
+
+.nth-list li {
+  padding: 0.5rem 0.8rem;
+}
+
+/* :nth-child(even) shades every other list item */
+.nth-list li:nth-child(even) {
+  background-color: #e0e7ff;
+  border-radius: 4px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectors Practice</title>
+<link rel="stylesheet" href="q4.css">
+</head>
+<body>
+
+  <header>
+    <h1>CSS Selectors Practice</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Element &amp; Class Selectors</h2>
+      <p>This is a plain paragraph, styled by the <strong>element selector</strong>.</p>
+      <p class="highlight">This paragraph has a class, styled by the <strong>class selector</strong>.</p>
+    </section>
+
+    <section>
+      <h2>ID Selector</h2>
+      <p id="intro">This paragraph is styled uniquely using an <strong>ID selector</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Attribute Selector</h2>
+      <a href="https://example.com">Secure link (matched by attribute selector)</a>
+    </section>
+
+    <section class="combinator-box">
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child of .parent (<code>&gt;</code>)</p>
+        <span>Adjacent sibling span (<code>+</code>)</span>
+        <span>General sibling span (<code>~</code>)</span>
+        <div class="nested">
+          <p>Descendant paragraph (space combinator)</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>List Example</h2>
+      <ul class="demo-list">
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Selectors Practice Page</p>
+  </footer>
+
+</body>
+</html>

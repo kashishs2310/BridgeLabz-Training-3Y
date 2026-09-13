@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #f5f5f7;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+/* Flexbox aligns buttons with consistent spacing */
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+/* Primary: filled, high-emphasis button */
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.35);
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  background-color: #1e40af;
+}
+
+/* Secondary: softer filled button */
+.btn-secondary {
+  background-color: #e5e7eb;
+  color: #111827;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+  background-color: #9ca3af;
+}
+
+/* Outline: transparent with a visible border */
+.btn-outline {
+  background-color: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.btn-outline:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-outline:active {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* :focus — visible ring for keyboard users on any button */
+.btn:focus {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+/* :disabled — dimmed, no pointer, no hover/active effects */
+.btn:disabled {
+  background-color: #cbd5e1;
+  color: #64748b;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
