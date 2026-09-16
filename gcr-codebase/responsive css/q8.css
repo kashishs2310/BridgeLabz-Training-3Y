@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* ===== Side-by-side comparison on desktop ===== */
+.compare-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+
+.compare-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  flex: 1;
+  max-width: 400px;
+}
+
+.compare-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.5s ease-in-out;
+}
+
+.compare-item figcaption {
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+/* Right (after) image starts filtered */
+.compare-item.after img {
+  filter: brightness(1.4) contrast(1.5);
+}
+
+/* Filter fades away smoothly on hover */
+.compare-item.after:hover img {
+  filter: none;
+}
+
+/* ===== Stack vertically below 700px ===== */
+@media (max-width: 700px) {
+  .compare-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 - Responsive Design Principles Summary</title>
+  <link rel="stylesheet" href="q9.css">
+</head>
+<body>
+  <header>
+    <h1>Core Principles of Responsive Design</h1>
+  </header>
+
+  <main>
+    <section class="principle-grid">
+      <article class="principle-box">
+        <h2>Fluid Layouts</h2>
+        <p>Layouts sized with relative units so they resize smoothly with the viewport.</p>
+        <pre><code>.container { width: 90%; }</code></pre>
+      </article>
+
+      <article class="principle-box">
+        <h2>Flexible Media</h2>
+        <p>Images and media that scale within their container instead of overflowing it.</p>
+        <pre><code>img { max-width: 100%; }</code></pre>
+      </article>
+
+      <article class="principle-box">
+        <h2>Breakpoints</h2>
+        <p>Specific viewport widths where the layout changes to fit the screen better.</p>
+        <pre><code>@media (max-width: 600px) { }</code></pre>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Responsive CSS Assignment</p>
+  </footer>
+</body>
+</html>

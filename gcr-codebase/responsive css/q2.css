@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  background-color: #fafafa;
+}
+
+/* ===== Header: logo left, nav right ===== */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+/* ===== Main: three feature boxes horizontally ===== */
+.features {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.feature-box {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: scale(1.05);
+}
+
+.feature-box h2 {
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+/* ===== Footer centered ===== */
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+/* ===== Responsive: stack below 750px ===== */
+@media (max-width: 750px) {
+  .site-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+}

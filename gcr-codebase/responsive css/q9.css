@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* ===== Grid: three boxes ===== */
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.principle-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.principle-box h2 {
+  margin-bottom: 0.5rem;
+}
+
+.principle-box pre {
+  margin-top: 0.75rem;
+  background-color: #f1f5f9;
+  padding: 0.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+
+/* ===== Hover: gradient background + text color change ===== */
+.principle-box:hover {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #fff;
+}
+
+.principle-box:hover pre {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* ===== Single column below 600px ===== */
+@media (max-width: 600px) {
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+}

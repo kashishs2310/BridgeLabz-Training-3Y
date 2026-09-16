@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* ===== Fluid typography section ===== */
+.type-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.type-section h1 {
+  /* scales between 1.5rem and 3rem, driven by viewport width */
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.type-section p {
+  /* scales between 1rem and 1.5rem */
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.8;
+}
+
+/* ===== Adjust readability below 700px ===== */
+@media (max-width: 700px) {
+  .type-section {
+    padding: 2rem 1rem;
+  }
+
+  .type-section p {
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+}
