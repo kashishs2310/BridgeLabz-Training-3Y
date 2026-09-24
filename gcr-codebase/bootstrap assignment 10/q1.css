@@ -1,0 +1,4 @@
+.site-header { background: #14342b; }
+.hero { background: linear-gradient(135deg, #14342b, #2c6e57); color: #fff; }
+.hero .btn-warning { transition: transform .2s; }
+.hero .btn-warning:hover { transform: translateY(-2px); }

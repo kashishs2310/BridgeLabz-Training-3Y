@@ -1,0 +1,14 @@
+:root {
+  --bs-primary: #0f766e;
+  --bs-primary-rgb: 15, 118, 110;
+  --bs-font-sans-serif: 'Source Sans 3', system-ui, sans-serif;
+  --bs-body-bg: #f6faf9;
+}
+h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', Georgia, serif; }
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary); --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #0b5c56; --bs-btn-hover-border-color: #0b5c56;
+  --bs-btn-active-bg: #0a4d48; --bs-btn-active-border-color: #0a4d48;
+}
+.card { border-top: 4px solid var(--bs-primary); }
+.card-title { color: var(--bs-primary); }

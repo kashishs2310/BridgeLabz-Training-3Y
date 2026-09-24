@@ -1,0 +1,4 @@
+.carousel-item img { height: 60vh; min-height: 260px; object-fit: cover; }
+.carousel-caption { background: rgba(0,0,0,.45); border-radius: .5rem; }
+.booking { max-width: 720px; }
+.progress { height: 1.5rem; }
