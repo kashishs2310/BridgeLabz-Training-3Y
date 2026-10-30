@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Q4 - Theme Switcher</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 60px 16px; transition: background 0.3s, color 0.3s; }
+    body.theme-light { background: #ffffff; color: #222222; }
+    body.theme-dark  { background: #1e1e1e; color: #f0f0f0; }
+    body.theme-blue  { background: #d6ecff; color: #0b3d91; }
+    button { padding: 10px 18px; margin: 4px; cursor: pointer; border-radius: 6px; border: 1px solid #888; }
+    #status { margin-top: 24px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Theme Switcher</h2>
+  <button data-theme-btn="light">Light</button>
+  <button data-theme-btn="dark">Dark</button>
+  <button data-theme-btn="blue">Blue</button>
+  <p id="status"></p>
+  <script src="q4.js"></script>
+</body>
+</html>
